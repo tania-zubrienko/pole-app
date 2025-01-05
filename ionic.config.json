@@ -1,0 +1,7 @@
+{
+  "name": "poleApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
