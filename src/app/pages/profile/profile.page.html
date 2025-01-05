@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<div class="container">
+  <img src="https://picsum.photos/300" alt="profile">
+  <ion-grid>
+    <ion-row >
+      <ion-col size="4"><h5>Name</h5></ion-col>
+      <ion-col><h5>Test user</h5></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4"><h5>Username</h5></ion-col>
+      <ion-col><h5>Some nickname</h5></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4"><h5>Email</h5></ion-col>
+      <ion-col><h5>example_email.com</h5></ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <ion-list>
+    <ion-item button detail="true" (click)="redirect('/tab2')">
+      <ion-label><h5>Active Plans</h5></ion-label>
+    </ion-item>
+    <ion-item button detail="true" (click)="redirect('/profile/favourites')">
+      <ion-label><h5>Favourite Figures</h5></ion-label>
+    </ion-item>
+    <ion-item button detail="true" (click)="redirect('/profile/completed')">
+      <ion-label><h5>Figures Completed</h5></ion-label>
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>

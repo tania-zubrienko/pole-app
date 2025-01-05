@@ -8,8 +8,8 @@ const routes: Routes = [
   }
   ,
   {
-    path: 'tab1',
-    loadChildren: () => import('./pages/tab1/tab1.module').then(m => m.Tab1PageModule)
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfilePageModule)
   },
   {
     path: 'tab2',
@@ -23,6 +23,14 @@ const routes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'favourites',
+    loadChildren: () => import('./pages/favourites/favourites.module').then( m => m.FavouritesPageModule)
+  },
+  {
+    path: 'completed',
+    loadChildren: () => import('./pages/completed/completed.module').then( m => m.CompletedPageModule)
   },
 ];
 @NgModule({
