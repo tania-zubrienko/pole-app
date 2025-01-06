@@ -6,6 +6,11 @@ import { GalleryPage } from './gallery.page';
 import { ExploreContainerComponentModule } from '../../components/explore-container/explore-container.module';
 
 import { galleryPageRoutingModule } from './gallery-routing.module';
+import { BeginnerPage } from './pages/beginner/beginner.page';
+import { IntermediatePage } from './pages/intermediate/intermediate.page';
+import { AdvancedPage } from './pages/advanced/advanced.page';
+import { ProPage } from './pages/pro/pro.page';
+import { StarPage } from './pages/star/star.page';
 
 @NgModule({
   imports: [
@@ -15,6 +20,20 @@ import { galleryPageRoutingModule } from './gallery-routing.module';
     ExploreContainerComponentModule,
     galleryPageRoutingModule
   ],
-  declarations: [GalleryPage]
+  exports:[
+    BeginnerPage,
+    IntermediatePage,
+    AdvancedPage,
+    ProPage,
+    StarPage
+  ],
+  declarations: [
+    GalleryPage,
+    BeginnerPage,
+    IntermediatePage,
+    AdvancedPage,
+    ProPage,
+    StarPage
+  ]
 })
 export class GalleryPageModule {}

@@ -1,23 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfilePage } from './profile.page';
-import { FavouritesPage } from '../favourites/favourites.page';
-import { CompletedPage } from '../completed/completed.page';
+import { FavouritesPage } from './pages/favourites/favourites.page';
+import { CompletedPage } from './pages/completed/completed.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: ProfilePage,
-  },
-  {
-    path: 'favourites',
-    component: FavouritesPage,
-  }
-  ,
-  {
-    path: 'completed',
-    component: CompletedPage,
-  }
+  { path: '', component: ProfilePage  },
+  { path: 'favourites',component: FavouritesPage },
+  { path: 'completed', component: CompletedPage  }
 ];
 
 @NgModule({

@@ -4,8 +4,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-completed',
   templateUrl: './completed.page.html',
-  styleUrls: ['./completed.page.scss'],
-
   standalone: false,
 })
 export class CompletedPage  {

@@ -21,17 +21,9 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full'
-  },
-  {
-    path: 'favourites',
-    loadChildren: () => import('./pages/favourites/favourites.module').then( m => m.FavouritesPageModule)
-  },
-  {
-    path: 'completed',
-    loadChildren: () => import('./pages/completed/completed.module').then( m => m.CompletedPageModule)
-  },
+  }
 ];
 @NgModule({
   imports: [

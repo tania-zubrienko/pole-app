@@ -7,11 +7,62 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Common Gallery</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Common Gallery"></app-explore-container>
+  <div class="description">
+    <h4>For your comfort all elements are grouped in blocks according to their dificulty.</h4>
+    <h5>Feel free to combine them in your perdonal plan. Nevertheless we highly recomend to complete at least 80% of one level to get to the next one</h5>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <ion-item [button]="true" routerLink="/gallery/beginner">
+          <img src="https://picsum.photos/100?grayscale" alt="lvl1">
+              <ion-label>
+                <h2>Beginner</h2>
+                <p>Level 1</p>
+              </ion-label>
+          <ion-badge color="light" mode="ios">15 elm</ion-badge>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-item [button]="true" routerLink="/gallery/intermediate">
+          <img src="https://picsum.photos/100?grayscale" alt="lvl2">
+              <ion-label>
+                <h2>Intermediate</h2>
+                <p>Level 2</p>
+              </ion-label>
+          <ion-badge color="light" mode="ios">15 elm</ion-badge>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-item [button]="true" routerLink="/gallery/advanced">
+          <img src="https://picsum.photos/100?grayscale" alt="lvl3">
+              <ion-label>
+                <h2>Advanced</h2>
+                <p>Level 3</p>
+              </ion-label>
+          <ion-badge color="light" mode="ios">15 elm</ion-badge>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-item [button]="true" routerLink="/gallery/pro">
+          <img src="https://picsum.photos/100?grayscale" alt="lvl4">
+              <ion-label>
+                <h2>Pro</h2>
+                <p>Level 4</p>
+              </ion-label>
+          <ion-badge color="light" mode="ios">15 elm</ion-badge>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-item [button]="true" routerLink="/gallery/star">
+          <img src="https://picsum.photos/100?grayscale" alt="lvl5">
+              <ion-label>
+                <h2>Star</h2>
+                <p>Level 5</p>
+              </ion-label>
+          <ion-badge color="light" mode="ios">15 elm</ion-badge>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

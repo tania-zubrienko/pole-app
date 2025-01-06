@@ -13,6 +13,7 @@ export class ProfilePage {
   ) { }
 
   redirect(page:string){
+    console.log(page)
     this.router.navigate([page])
   }
 }
